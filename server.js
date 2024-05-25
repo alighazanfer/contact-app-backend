@@ -2,7 +2,7 @@ import express from "express"
 import "dotenv/config"
 import { contactsRouter } from "./routes/ContactsRoute.js"
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 const server = express()
 
 server.use(express.json())
