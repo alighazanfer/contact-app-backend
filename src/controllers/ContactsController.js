@@ -1,4 +1,4 @@
-import pool from '../../database.js'
+import pool from '../database.js'
 
 export class contactsController {
     static getAllContacts = async (req, res) => {
