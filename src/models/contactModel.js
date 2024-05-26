@@ -1,15 +1,15 @@
-import mongoose from "mongoose";
+import { Schema, model } from "mongoose";
 
-const contactSchema = new mongoose.Schema({
+const contactSchema = new Schema({
     name: {
         type: String,
         required: true
     },
-    contact: {
+    number: {
         type: Number,
         required: true,
         unique: true
     }
-})
+}, { timestamps: true })
 
-export const Contact = mongoose.model("Contact", contactSchema)
+export const Contact = model("Contact", contactSchema)
